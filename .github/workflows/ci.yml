@@ -30,7 +30,6 @@ jobs:
       - run: echo ${{ github.event.client_payload.sha }} ${{ github.event.client_payload.submodule }}
 
   linter_backend:
-    if: github.repository == 'online-furniture-store/online_furniture_store_backend'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code Repository
