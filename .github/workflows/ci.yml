@@ -7,12 +7,10 @@ env:
 
 on:
   pull_request:
-    branches: ['master', 'main', 'dev', 'develop']
+    branches: ['master', 'main', 'dev']
 
   push:
-    branches: ['master', 'main', 'dev', 'develop', 'feat/deploy-frontend-backend-together']
-    paths:
-         - 'frontend/**'
+    branches: ['master', 'main', 'dev', 'feat/deploy-frontend-backend-together']
 
   repository_dispatch:
     types: [build-project]
