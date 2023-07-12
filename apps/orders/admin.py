@@ -9,7 +9,6 @@ User = get_user_model()
 
 @admin.register(DeliveryType)
 class DeliveryTypeAdmin(ImportExportModelAdmin):
-    """Тип доставки."""
     list_display = ('id', 'name')
     search_fields = ('name',)
     list_filter = ('name',)
